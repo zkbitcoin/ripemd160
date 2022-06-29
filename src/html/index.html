@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>RIPEMD-160 Hashing</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/ripemd160.js"></script>
+    </head>
+    <body>
+    <script type="text/javascript">
+        var hash = CryptoJS.SHA256("hello");
+        console.log('sha256 hash: ' + hash);
+        hash = CryptoJS.RIPEMD160('hello');
+        console.log('ripmed160 hash: ' + hash);
+    </script>
+    </body>
+</html>
