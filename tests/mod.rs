@@ -7,10 +7,10 @@ fn ripemd160_test() {
     let mut hasher = Ripemd160::new();
 
     // process input message
-    hasher.update(b"Hello world!");
+    hasher.update(b"hello");
 
     // acquire hash digest in the form of GenericArray,
     // which in this case is equivalent to [u8; 20]
     let result = hasher.finalize();
-    assert_eq!(result[..], hex!("7f772647d88750add82d8e1a7a3e5c0902a346a3"));
+    assert_eq!(result[..], hex!("108f07b8382412612c048d07d13f814118445acd"));
 }
